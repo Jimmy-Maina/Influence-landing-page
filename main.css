@@ -1,7 +1,57 @@
+:root {
+  --dark-color: #1c1920;
+  --main-font: "Montserrat", sans-serif;
+  --pink-gradient: linear-gradient(
+    145deg,
+    rgb(252, 90, 139) 10%,
+    rgb(160, 141, 206) 90%
+  );
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
   font-size: 1em;
+}
+
+body {
+  width: 100%;
+  font-family: var(--main-font);
+}
+
+.dark-background {
+  width: 70%;
+  height: 99vh;
+  border-radius: 0 0 250px 0;
+  background-color: var(--dark-color);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+
+div > h4 {
+  color: aliceblue;
+}
+
+div.burger > .lines {
+  height: 1.5px;
+  width: 30px;
+  background-color: aliceblue;
+  margin: 5px;
+}
+
+div.pink-background {
+  width: 50%;
+  height: 75vh;
+  border-radius: 0 0 0 220px;
+  background: var(--pink-gradient);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  right: 0;
+  top: 0;
 }
